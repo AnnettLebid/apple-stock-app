@@ -10,7 +10,7 @@ export const Header = () => {
     <StyledCard>
       <Box className="wrapper">
         <Box>
-          <Typography fontSize="2rem" fontWeight="600">
+          <Typography fontSize="2.25rem" fontWeight="500">
             Apple Inc
           </Typography>
           <Typography className="date-time">As of: {lastUpdateTime}</Typography>
@@ -23,7 +23,7 @@ export const Header = () => {
               <ArrowDropDown fontSize="large" htmlColor="#FF0800" />
             )}
             <Box sx={{ minWidth: 160 }}>
-              <Typography fontSize="2.2rem" fontWeight="800" title={lastPrice}>
+              <Typography fontSize="3rem" fontWeight="500" title={lastPrice}>
                 {lastPrice}
               </Typography>
             </Box>

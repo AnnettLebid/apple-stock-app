@@ -2,7 +2,7 @@ import { styled } from "@mui/material/styles";
 import { Card } from "@mui/material";
 
 export const StyledCard = styled(Card)(() => ({
-  padding: "1rem",
+  padding: "0.313rem",
   "& .wrapper": {
     display: "flex",
     justifyContent: "space-between",
@@ -10,8 +10,8 @@ export const StyledCard = styled(Card)(() => ({
   },
   "& .date-time": {
     fontSize: "0.875rem",
-    fontWeight: 550,
-    color: "#A6AEB5",
+    fontWeight: 500,
+    color: "#9A9C9F",
   },
   "& .price-wrapper": {
     display: "flex",
