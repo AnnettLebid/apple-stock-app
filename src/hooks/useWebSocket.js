@@ -17,7 +17,6 @@ export const useWebSocket = () => {
   useEffect(() => {
     ws.onopen = (event) => {
       ws.send(JSON.stringify(subscribeMessage));
-      console.log(ws);
     };
 
     setIsLoading(true);
