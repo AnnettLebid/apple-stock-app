@@ -1,10 +1,11 @@
-import { Box, Typography, CircularProgress } from "@mui/material";
+import { Box, Typography, CircularProgress, IconButton } from "@mui/material";
 import { ArrowDropUp, ArrowDropDown } from "@mui/icons-material";
 import { useWebSocket } from "../../hooks/useWebSocket";
 import { StyledCard } from "./Header.styles";
 
 export const Header = () => {
-  const { lastPrice, change, percentChange, lastUpdateTime, isLoading } = useWebSocket();
+  const { lastPrice, change, percentChange, lastUpdateTime, isLoading } =
+    useWebSocket();
 
   return (
     <StyledCard>
@@ -23,9 +24,17 @@ export const Header = () => {
           <Box>
             <Box className="price-wrapper">
               {percentChange > 0 ? (
-                <ArrowDropUp fontSize="large" htmlColor="#03AC13" />
+                <ArrowDropUp
+                  htmlColor="#03AC13"
+                  className="arrow-icon"
+                  sx={{ fontSize: "3.125rem" }}
+                />
               ) : (
-                <ArrowDropDown fontSize="large" htmlColor="#FF0800" />
+                <ArrowDropDown
+                  htmlColor="#FF0800"
+                  className="arrow-icon"
+                  sx={{ fontSize: "3.125rem" }}
+                />
               )}
               <Box sx={{ minWidth: 200 }}>
                 <Typography fontSize="3rem" fontWeight="500" title={lastPrice}>

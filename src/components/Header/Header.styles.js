@@ -20,6 +20,7 @@ export const StyledCard = styled(Card)(() => ({
   "& .change-wrapper": {
     display: "flex",
     justifyContent: "space-between",
+    paddingLeft: "1rem",
     "&.MuiTypography-root": {
       fontSize: "1rem",
       fontWeight: 700,
