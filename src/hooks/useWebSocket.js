@@ -12,6 +12,7 @@ export const useWebSocket = () => {
   const [change, setChange] = useState("");
   const [percentChange, setPercentChange] = useState("");
   const [lastUpdateTime, setLastUpdateTime] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     ws.onopen = (event) => {
@@ -19,9 +20,13 @@ export const useWebSocket = () => {
       console.log(ws);
     };
 
+    setIsLoading(true);
+
     ws.onmessage = (event) => {
       const result = JSON.parse(event.data);
       const data = result["s-aapl"];
+
+      setIsLoading(false);
 
       setLastPrice(data["last"]);
       setChange(data["change"]);
@@ -36,7 +41,7 @@ export const useWebSocket = () => {
     };
   }, []);
 
-  return { lastPrice, change, percentChange, lastUpdateTime };
+  return { lastPrice, change, percentChange, lastUpdateTime, isLoading };
 };
 
 export default useWebSocket;
