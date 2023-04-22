@@ -31,7 +31,6 @@ export const CustomTabs = ({ tabs, ...tabsProps }) => {
             label={tab.label}
             key={`${tab.label}-${index}`}
             {...a11yProps(index)}
-            sx={{ mr: (theme) => theme.spacing(1.5) }}
           />
         ))}
       </Tabs>
@@ -40,7 +39,6 @@ export const CustomTabs = ({ tabs, ...tabsProps }) => {
           value={`${tabIndex}`}
           key={`${tab.label}-${tabIndex}`}
           sx={{
-            p: (theme) => theme.spacing(1.5, 0),
             width: "100%",
             height: "100%",
           }}

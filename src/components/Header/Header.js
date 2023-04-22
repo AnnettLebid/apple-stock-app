@@ -1,4 +1,4 @@
-import { Box, Typography, CircularProgress, IconButton } from "@mui/material";
+import { Box, Typography, CircularProgress } from "@mui/material";
 import { ArrowDropUp, ArrowDropDown } from "@mui/icons-material";
 import { useWebSocket } from "../../hooks/useWebSocket";
 import { StyledCard } from "./Header.styles";
