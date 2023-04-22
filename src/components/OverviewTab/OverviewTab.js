@@ -3,8 +3,6 @@ import { TimeFrameSelector } from "../TimeFrameSelector";
 import { AreaChart } from "../AreaChart";
 
 export const OverviewTab = ({ onChange, stockData, selectedTimeFrame }) => {
-  
-
   return (
     <Box sx={{ height: 400, width: "100%" }}>
       <TimeFrameSelector
