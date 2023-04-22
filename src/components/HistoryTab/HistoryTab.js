@@ -8,8 +8,7 @@ export const HistoryTab = ({
   selectedTimeFrame,
   loading,
 }) => {
-  console.log("HistoryTab");
-
+  
   return (
     <Box sx={{ height: 400, width: "100%" }}>
       <TimeFrameSelector

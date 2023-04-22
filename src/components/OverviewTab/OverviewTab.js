@@ -8,7 +8,7 @@ export const OverviewTab = ({
   selectedTimeFrame,
   loading,
 }) => {
-  console.log("OverviewTab");
+  
   return (
     <Box sx={{ height: 400, width: "100%" }}>
       <TimeFrameSelector
