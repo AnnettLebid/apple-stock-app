@@ -31,6 +31,7 @@ export const CustomTabs = ({ tabs, ...tabsProps }) => {
             label={tab.label}
             key={`${tab.label}-${index}`}
             {...a11yProps(index)}
+            sx={{ textTransform: "none", fontWeight: "bold" }}
           />
         ))}
       </Tabs>
@@ -39,6 +40,7 @@ export const CustomTabs = ({ tabs, ...tabsProps }) => {
           value={`${tabIndex}`}
           key={`${tab.label}-${tabIndex}`}
           sx={{
+            p: (1.5, 0),
             width: "100%",
             height: "100%",
           }}

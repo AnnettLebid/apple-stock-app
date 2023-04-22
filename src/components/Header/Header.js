@@ -36,7 +36,7 @@ export const Header = () => {
                   sx={{ fontSize: "3.125rem" }}
                 />
               )}
-              <Box sx={{ minWidth: 200 }}>
+              <Box className="price">
                 <Typography fontSize="3rem" fontWeight="500" title={lastPrice}>
                   {lastPrice}
                 </Typography>

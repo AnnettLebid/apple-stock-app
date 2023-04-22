@@ -17,6 +17,10 @@ export const StyledCard = styled(Card)(() => ({
     display: "flex",
     alignItems: "center",
   },
+  "& .price": {
+    minWidth: 200,
+    lineHeight: "3rem",
+  },
   "& .change-wrapper": {
     display: "flex",
     justifyContent: "space-between",
